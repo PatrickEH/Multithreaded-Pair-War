@@ -1,0 +1,11 @@
+Patrick Harris - Program 1 - Submission Report
+
+This program uses multithreading in the C programming language, to mimic a card game by the name of "Pair War", which in this case will consist of a dealer and three players and will be played for three rounds. I chose to write my program in the C language out of confidence in my C/C++ knowledge over Python, Java, etc.. As required the program is done using multhithreading. My code uses a structure, a variety of variables and functions, semaphores, mutex's, and pthreads in order to execute in entirety. Two of my functions use a subroutine pointer while passing an argument, to handle the actions of the dealer and player threads, whilst the other functions are used to either pick up a card, dismiss a card, display the deck, and/or write to the log file. The structure contains three variables that are used to identify the player number and the cards. The semaphores are used to halt the players and make them wait until whatever task is being completed at the time. The mutex's are used to lock a thread to be executed then unlock so a different thread can be executed. Every action being completed is being written to the screen output and to a log file as seen in the assignment pdf. 
+
+The program runs on a single file 'source.c' and has been executed in both C and Linux environments. 
+
+For the Linux execution: 
+            
+	1.) compile using	gcc -o source source.c -lpthread
+	
+	2.) run using		./source
